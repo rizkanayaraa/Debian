@@ -23,20 +23,21 @@ tailwind.config = {
 
 </head>
 
-<body class="bg-black text-white font-poppins">
+<body class="bg-pink-50 text-gray-800 font-poppins">
 
 <!-- HEADER -->
 <header class="text-center py-20 px-6">
-  <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-400 via-fuchsia-500 to-pink-600 bg-clip-text text-transparent">
+  <h1 class="text-4xl md:text-5xl font-bold text-pink-500">
      ˚ 𐙚.⋆ Laporan Praktikum ⋆.𐙚 ˚
   </h1>
-  <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-400 via-fuchsia-500 to-pink-600 bg-clip-text text-transparent">
+  <h1 class="text-3xl md:text-4xl font-semibold text-pink-400 mt-2">
     Cloud Computing
   </h1>
-  <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-400 via-fuchsia-500 to-pink-600 bg-clip-text text-transparent">
+  <h1 class="text-lg text-gray-600 mt-2">
     Rizka Nayara | 211011401190 | 04TPLP010
   </h1>
-  <p class="max-w-xl mx-auto mt-6 text-gray-400">
+
+  <p class="max-w-xl mx-auto mt-6 text-gray-500">
     Cloud Computing adalah teknologi yang memungkinkan pengguna untuk mengakses server, penyimpanan,
     dan aplikasi melalui internet tanpa perlu memiliki perangkat fisik sendiri.
   </p>
@@ -45,86 +46,94 @@ tailwind.config = {
 <!-- CONTAINER -->
 <div class="max-w-4xl mx-auto px-6 space-y-10 pb-20">
 
-  <!-- CARD 1 -->
-  <div class="bg-white/5 backdrop-blur-xl border border-pink-500/20 rounded-3xl p-8 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(244,114,182,0.3)] transition">
-    <span class="px-4 py-1 text-sm rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500 text-white">
-      Pertemuan 01
-    </span>
+  <!-- PERTEMUAN 1 -->
+  <div class="bg-white border border-pink-200 rounded-3xl p-8 shadow-md">
+    <span class="px-4 py-1 text-sm rounded-full bg-pink-400 text-white">Pertemuan 1</span>
+    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-500">Instalasi Debian</h2>
 
-    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-300">
-      𝜗ৎ Instalasi Sistem Operasi Debian 𝜗ৎ
-    </h2>
-
-    <p class="text-gray-400 mb-4">
+    <p class="text-gray-600 mb-4">
       Pada pertemuan ini dilakukan instalasi sistem operasi Debian sebagai dasar dalam membangun server.
-      Debian dipilih karena stabil dan banyak digunakan dalam lingkungan cloud computing.
+      Debian dipilih karena memiliki tingkat stabilitas yang tinggi dan banyak digunakan dalam lingkungan server
+      maupun cloud computing. Proses instalasi dilakukan melalui virtual machine agar dapat mensimulasikan
+      penggunaan server secara nyata tanpa membutuhkan perangkat fisik tambahan.
     </p>
 
-    <ul class="list-disc pl-5 space-y-2 text-gray-300">
-      <li>Menyiapkan file ISO Debian.</li>
-      <li>Membuat Virtual Machine (RAM 2GB, Storage 20GB).</li>
-      <li>Booting dan memulai instalasi sistem.</li>
-      <li>Konfigurasi hostname dan domain server.</li>
-      <li>Membuat user root dan user biasa.</li>
-      <li>Instalasi paket sistem dasar.</li>
-      <li>Menyelesaikan instalasi hingga berhasil login.</li>
+    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+      <li>Menyiapkan file ISO Debian</li>
+      <li>Membuat Virtual Machine</li>
+      <li>Booting dan instalasi sistem</li>
+      <li>Konfigurasi hostname</li>
+      <li>Membuat user</li>
+      <li>Instalasi sistem dasar</li>
     </ul>
   </div>
 
-  <!-- CARD 2 -->
-  <div class="bg-white/5 backdrop-blur-xl border border-pink-500/20 rounded-3xl p-8 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(244,114,182,0.3)] transition">
-    <span class="px-4 py-1 text-sm rounded-full bg-gradient-to-r from-fuchsia-500 to-pink-600 text-white">
-      Pertemuan 02
-    </span>
+  <!-- PERTEMUAN 2 -->
+  <div class="bg-white border border-pink-200 rounded-3xl p-8 shadow-md">
+    <span class="px-4 py-1 text-sm rounded-full bg-pink-400 text-white">Pertemuan 2</span>
+    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-500">Konfigurasi IP Address</h2>
 
-    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-300">
-      𝜗ৎ Konfigurasi IP Address 𝜗ৎ
-    </h2>
-
-    <p class="text-gray-400 mb-4">
-      Konfigurasi IP Address dilakukan untuk memberikan alamat tetap (static IP) pada server
-      agar mudah diakses dalam jaringan.
+    <p class="text-gray-600 mb-4">
+      Pada tahap ini dilakukan konfigurasi IP Address untuk memberikan alamat tetap (static IP) pada server.
+      Hal ini penting agar server dapat diakses secara konsisten dalam jaringan. Dengan menggunakan IP statis,
+      server tidak akan berubah alamatnya sehingga memudahkan proses pengelolaan dan koneksi antar perangkat.
     </p>
 
-    <ul class="list-disc pl-5 space-y-2 text-gray-300">
-      <li>Cek interface dengan <b>ip a</b></li>
-      <li>Edit file <b>/etc/network/interfaces</b></li>
-      <li>Masukkan IP Address, Netmask, Gateway</li>
+    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+      <li>Cek interface (ip a)</li>
+      <li>Edit file network</li>
+      <li>Set IP Address</li>
       <li>Restart networking</li>
-      <li>Uji koneksi dengan <b>ping</b></li>
-      <li>Pastikan server terhubung jaringan</li>
+      <li>Test koneksi</li>
     </ul>
   </div>
 
-  <!-- CARD 3 -->
-  <div class="bg-white/5 backdrop-blur-xl border border-pink-500/20 rounded-3xl p-8 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(244,114,182,0.3)] transition">
-    <span class="px-4 py-1 text-sm rounded-full bg-gradient-to-r from-pink-600 to-fuchsia-600 text-white">
-      Pertemuan 03
-    </span>
+  <!-- PERTEMUAN 3 -->
+  <div class="bg-white border border-pink-200 rounded-3xl p-8 shadow-md">
+    <span class="px-4 py-1 text-sm rounded-full bg-pink-400 text-white">Pertemuan 3</span>
+    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-500">DNS Server</h2>
 
-    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-300">
-      𝜗ৎ Instalasi Web Server Apache 𝜗ৎ
-    </h2>
-
-    <p class="text-gray-400 mb-4">
-      Pada tahap ini dilakukan instalasi Apache sebagai web server untuk menjalankan website
-      pada sistem Debian.
+    <p class="text-gray-600 mb-4">
+      Pada pertemuan ini dilakukan konfigurasi DNS Server yang berfungsi untuk menerjemahkan nama domain
+      menjadi alamat IP. Dengan adanya DNS, pengguna tidak perlu mengingat alamat IP server,
+      cukup menggunakan nama domain yang lebih mudah diingat. DNS server sangat penting dalam
+      infrastruktur jaringan dan cloud computing.
     </p>
 
-    <ul class="list-disc pl-5 space-y-2 text-gray-300">
-      <li>Install Apache: <b>apt install apache2</b></li>
-      <li>Cek status: <b>systemctl status apache2</b></li>
-      <li>Akses melalui browser menggunakan IP server</li>
-      <li>Edit file di <b>/var/www/html</b></li>
-      <li>Deploy file HTML</li>
-      <li>Uji akses website</li>
+    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+      <li>Install bind9</li>
+      <li>Konfigurasi file named.conf</li>
+      <li>Membuat zone domain</li>
+      <li>Setting forward & reverse DNS</li>
+      <li>Restart service DNS</li>
+    </ul>
+  </div>
+
+  <!-- PERTEMUAN 4 -->
+  <div class="bg-white border border-pink-200 rounded-3xl p-8 shadow-md">
+    <span class="px-4 py-1 text-sm rounded-full bg-pink-400 text-white">Pertemuan 4</span>
+    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-500">Konfigurasi Web Server</h2>
+
+    <p class="text-gray-600 mb-4">
+      Pada tahap ini dilakukan konfigurasi web server menggunakan Apache. Web server berfungsi
+      untuk menampilkan website agar dapat diakses melalui browser. Setelah Apache terinstal,
+      dilakukan pengujian dengan mengakses alamat IP server dan melakukan deploy file HTML
+      sebagai halaman website.
+    </p>
+
+    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+      <li>Install apache2</li>
+      <li>Cek status server</li>
+      <li>Akses melalui browser</li>
+      <li>Edit file HTML</li>
+      <li>Deploy website</li>
     </ul>
   </div>
 
 </div>
 
 <!-- FOOTER -->
-<footer class="text-center py-10 text-gray-500 border-t border-pink-500/10">
+<footer class="text-center py-10 text-gray-400 border-t border-pink-200">
   © 2026 - Laporan Praktikum Cloud Computing 
 </footer>
 
